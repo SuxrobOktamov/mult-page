@@ -4,6 +4,7 @@
   font-family: 'Public Sans', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 h1, h2, h3, h4 {
   font-family: 'Roboto', sans-serif;
@@ -23,16 +24,20 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-  font-family: "Arial", sans-serif;
-  background-color: #fff;
-  overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #EDF3F8;
+    background-image: url(https://alonsohs.github.io/payapi-multi-page-website/assets/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 473px) 2270%;
+    overflow-x: hidden;
 }
 
 img {
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -57,20 +62,12 @@ ul li {
 a {
   text-decoration: none;
 }
-.menu1 {
-  display: none;
-}
 /* Header */
-#section1 {
-  height: 791px;
-  background-color: #EDF3F8;
-  background-image: url(https://alonsohs.github.io/payapi-multi-page-website/assets/shared/desktop/bg-pattern-circle.svg);
-  background-repeat: no-repeat;
-  background-position: calc(50% + 450px) -150px;
-  padding-top: 40px;
-  
-}
-.navbar nav a {
+header {
+    margin-bottom: 82px;
+    margin-top: 40px;
+  }
+.navbar a {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -81,22 +78,12 @@ a {
   opacity: 0.7;
   padding-left: 15px;
 }
-.navbar .menu-links a {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  color: #36536B;
-  mix-blend-mode: normal;
-  padding-left: 15px;
-}
 .menu {
   align-items: center;
   justify-content: space-between;
 }
-header {
-  margin-bottom: 40px;
+.menu1 {
+  display: none;
 }
 .navbar {
   align-items: center;
@@ -137,22 +124,6 @@ header {
 a.active {
   opacity: 1;
 }
-.hero-title {
-  align-items: center;
-  justify-content: space-between;
-}
-.hero-text h1 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 72px;
-  letter-spacing: -0.553846px;
-  color: #36536B;
-  margin-bottom: 21px;
-}
-.hero-img {
-  text-align: end;
-}
 .hero-mail {
   display: flex;
   background: #FBFCFE;
@@ -174,135 +145,28 @@ a.active {
 .hero-mail .menu-button button {
   cursor: pointer;
 }
-small {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  color: #6C8294;
-  padding-left: 20px;
-}
-small a {
-  color: #36536B;
-}
 
 
-#section2 {
-  height: 472px;
-  background-color:#1B262F;
-  background-image: url(https://alonsohs.github.io/payapi-multi-page-website/assets/shared/desktop/bg-pattern-circle.svg);
-  background-repeat: no-repeat;
-  background-position: calc(50% - 550px) -350px;
-  padding: 100px 0;
-}
-.banner {
-    align-items: center;
-    justify-content: space-between;
-}
-.banner-logo {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 40px 64px;
-}
-.banner-title h2 {
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: -0.369231px;
-    color: #FBFCFE;
-    margin-bottom: 24px;
-}
-.banner-title p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 28px;
-    color: #FBFCFE;
-    mix-blend-mode: normal;
-    opacity: 0.7;
-    margin-bottom: 32px;
-}
-.about-us-button {
-   height: 48px;
-    width: 129px;
-    border: 1px solid #fbfcfe;
-    background-color: transparent;
-    color: #fbfcfe;
-    font-size: 15px;
-    border-radius: 48px;
-    
-}
-.about-us-button:hover {
-  background-color: #fbfcfe;
-  color: #1B262F;
-}
 
 /* MAIN */
 
 #main {
-  background-color: #EDF3F8;
-  height: 1566px;
   background-image: url(https://alonsohs.github.io/payapi-multi-page-website/assets/shared/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
-  background-position: calc(50% + 700px);
-  padding:150px 0 96px 0 ;
+  background-position: -300px 47%;
 }
-.implement {
-  align-items: center;
+.pricing {
+  margin-bottom: 51px;
 }
-.implement-title h2 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: -0.369231px;
-    color: #36536B;
-    margin-bottom: 24px;
-}
-.implement-title p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 28px;
-    color: #6C8294;
-}
-.simple {
-    align-items: center;
-    justify-content: center;
-}
-.perks-container {
-  margin-bottom: 96px;
-}
-.perks {
-  text-align: center;
-  padding: 0 20px;
-}
-.perks-container img {
-  margin-bottom: 32px;
-}
-.perks-container h3 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: -0.138462px;
-  color: #36536B;
-  margin-bottom:16px ;
-}
-.perks-container p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: -0.115385px;
-  color: #6C8294;
+.pricing h1 {
+    font-size: 56px;
+    font-weight: 350;
+    color: #36536b;
+    line-height: 72px;
 }
 .ready {
-  align-items: center;
   justify-content: space-between;
+  margin-bottom: 96px;
 }
 .ready-title h2 {
     font-style: normal;
@@ -312,6 +176,58 @@ small a {
     letter-spacing: -0.369231px;
     color: #36536B;
 }
+.pricing-information h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.246154px;
+  color: #36536B;
+}
+.pricing-information {
+  grid-row-gap: 56px;
+  margin-bottom: 100px
+}
+.pricing-information p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C8294;
+}
+.about-container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 72px;
+}
+.company-states {
+  justify-content: space-between;
+  margin-bottom: 72px;
+}
+.company-div {
+  width: 31.5%;
+  padding: 17px 0;
+  border-bottom: 1px solid rgba(108,130,148, .5);
+  border-top: 1px solid rgba(108,130,148, .5);
+}
+.company-states p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+.company-states h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -0.430769px;
+  color: #BA4270;
+}
+
 /* footer */
 #footer {
   background-color: #1B262F;
@@ -344,85 +260,24 @@ small a {
   padding-top: 30px;
 }
 
+
+
 @media only screen and (max-width:992px) {
-  #section1 {    
-    background-size: 150%;
-    background-position: center -110vw;
-    height: 935px;
+  #main {
+    background-image: none;
   }
   header {
-    margin-bottom: 0;
-  }
+    margin-bottom: 100px;
+}
   .menu-list {
     grid-column-gap: 40px;
-  }
-  .hero-title {
-    flex-flow: wrap-reverse;
-    justify-content: center;
-    margin-bottom: 96px;
-  }
-  .hero-img {
-    text-align: center;
-    margin-left: 49px;
-  }
-  .hero-text {
-    text-align: center;
-  }
-  .hero-text h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
   }
   .hero-mail {
     margin-left: 70px;
     margin-right: 70px;
   }
-  #section2 {
-    height: 615px;
-    background-position: center -73vw;
-    padding: 0;
-  }
-  .banner {
-    flex-flow: wrap-reverse;
-    height: 615px;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    background-position: center -73vw;
-  }
-  .banner-logo {
-    grid-gap: 30px;
-  }
-  .banner-title {
-    text-align: center;
-  }
-
-  #main {
-    padding: 0;
-    height: 1860px;
-    background-image: none;
-  }
-  .implement {
-    justify-content: center;
-    margin-bottom: 40px;
-  }
-  .implement-title {
-    text-align: center;
-  }
-  .implement-title h2 {
-    font-weight: 350;
-    margin: 0;
-  }
-  .implement-logo {
-    margin-left: 47px;
-  }
-  .simple {
-    flex-flow: wrap-reverse;
-    margin-bottom: 100px;
-  }
-  .perks-container h3 {
-    font-weight: normal;
-  }
-  .perks {
-    padding: 0 5px;
+  #footer {
+    background-position: calc(50% + 400px) 20%;
   }
   .ready {
     justify-content: center;
@@ -438,28 +293,38 @@ small a {
   .ready .hero-mail {
     margin: 0;
   }
-  #footer {
-    background-position: calc(50% + 400px) 20%;
+  .pricing {
+    justify-content: center;
+    text-align: center;
+  }
+  .pricing h1 {
+    font-size: 48px;
+    color: #36536b;
+    font-weight: 400;
+    line-height: 61px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+  }
+  .pricing-information {
+    margin: 50px 0 70px;
+    grid-row-gap: 48px;
+  }
+  .information {
+    justify-content: space-between;
+  }
+  .about-container {
+    margin-bottom: 48px;
+  }
+  .company-states {
+    margin-bottom: 0;
   }
 }
 @media only screen and (max-width:768px) {
-  #section1 {
-    height: 868px;
-  }
   .menu-list {
     grid-column-gap: 20px;
   }
-  .navbar nav a {
-    padding-left: 30px;
-  }
-  #main {
-    height: 1876px;
-  }
 }
 @media only screen and (max-width:576px) {
-  #section1 {
-    height: 646px;
-  }
   .navbar.xx {
     display: none
   }
@@ -482,9 +347,11 @@ small a {
     right: 0;
     transform: translateX(100%);
     transition: all 1s ease-in-out;
+    /* display: none; */
   }
   #icon:checked + div {
     transform: translateX(0);
+    /* display: block; */
   }
   .check-menu span:nth-child(1) {
     width: 3px;
@@ -535,15 +402,9 @@ small a {
   .schedule-button.ss {
     width: auto;
   }
+
   
 
-  .hero-text h1 {
-    font-size: 32px;
-    line-height: 36px;
-    text-align: center;
-    letter-spacing: -0.246154px;
-    color: #36536B;
-  }
   .hero-mail {
     display: flex;
     flex-direction: column;
@@ -552,9 +413,6 @@ small a {
     box-shadow: none;
     background-color: transparent;
     margin-bottom: 24px;
-  }
-  .hero-title {
-    margin-bottom: 72px;
   }
   .hero-mail input {
     height: 48px;
@@ -572,55 +430,6 @@ small a {
     border-radius: 48px;
     padding: 0 20px;
     font-size: 15px;
-  }
-  #section2 {
-    height: 652px;
-    padding: 80px 0;
-    
-  }
-  .banner-logo {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 25px;
-    text-align: center;
-    margin-bottom: 56px;
-  }
-  .banner-title h2 {
-    font-style: normal;
-    font-size: 32px;
-    line-height: 36px;
-    text-align: center;
-    letter-spacing: -0.246154px;
-    margin-bottom: 16px;
-  }
-  .banner-title p {
-    margin-bottom: 60px;
-  }
-  .banner {
-    height: auto;
-  }
-  .implement {
-    margin-top: 40px;
-    margin-bottom: 80px;
-  }
-  .implement-title h2 {
-    font-size: 36px;
-    line-height: 36px;
-    text-align: center;
-    letter-spacing: -0.276923px;
-    margin-bottom: 24px;
-  }
-  .simple {
-    margin-bottom: 80px;
-  }
-  #main {
-    height: 2431px;
-  }
-  .perks-container {
-    margin-bottom: 80px;
-  }
-  .perks:not(:last-child){
-    margin-bottom: 48px;
   }
   .ready-title h2 {
     font-size: 32px;
@@ -648,5 +457,26 @@ small a {
     margin-bottom: 55px;
     text-align: center;
   }
-  
+  .pricing h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .pricing-information {
+    text-align: center;
+  }
+  .information h3 {    
+    margin-bottom: 20px;
+  }
+  .company-div {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 17px 0;
+    border-bottom: none;
+    border-top: none;
+  }
+  .company-states {
+    border-bottom: 1px solid rgba(108,130,148, .5);
+    border-top: 1px solid rgba(108,130,148, .5);
+  }
 }
